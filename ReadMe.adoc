@@ -7,8 +7,9 @@
 = IoT-enabled Air Quality Monitoring and Weather Comparison System =
 
 == Overview ==
-This project focuses on the development of an IoT-enabled Air Quality Monitoring and Weather Comparison System using ESP8266 and Arduino Cloud. The system integrates various sensors, such as DHT11 (for temperature and humidity) and MQ-135 (for air quality assessment), to collect real-time environmental data. Through Arduino Cloud, this data is stored, visualized, and made accessible via a cloud-based dashboard. Additionally, weather API integration enables users to compare indoor conditions with external meteorological data.
-Project Completion on 04/15/2024
+This project focuses on the development of an IoT-enabled Air Quality Monitoring and Weather Comparison System using ESP8266 and Arduino Cloud. The system integrates various sensors, such as DHT11 (for temperature and humidity) and MQ-135 (for air quality assessment), to collect real-time environmental data. Through Arduino Cloud, this data is stored, visualized, and made accessible via a cloud-based dashboard. Additionally, weather API integration enables users to compare indoor conditions with external meteorological data. Project Completed on 04/15/2024
+
+
 == Features ==
 
 Real-time environmental monitoring using ESP8266 and sensors
