@@ -1,55 +1,103 @@
-:Author: saikrishna154
-:Email:
+:Author: SAIkrishna140
+:Email: saikrishnam692@gmail.com
 :Date: 15/04/2024
 :Revision: version#
 :License: Public Domain
 
-= Project: {Project}
+= IoT-enabled Air Quality Monitoring and Weather Comparison System =
 
-Describe your project
+== Overview ==
+This project focuses on the development of an IoT-enabled Air Quality Monitoring and Weather Comparison System using ESP8266 and Arduino Cloud. The system integrates various sensors, such as DHT11 (for temperature and humidity) and MQ-135 (for air quality assessment), to collect real-time environmental data. Through Arduino Cloud, this data is stored, visualized, and made accessible via a cloud-based dashboard. Additionally, weather API integration enables users to compare indoor conditions with external meteorological data.
 
-== Step 1: Installation
-Please describe the steps to install this project.
+== Features ==
 
-For example:
+Real-time environmental monitoring using ESP8266 and sensors
 
-1. Open this file
-2. Edit as you like
-3. Release to the World!
+Cloud-based visualization through Arduino Cloud dashboard
 
-== Step 2: Assemble the circuit
+Weather API integration for comparative analysis
 
-Assemble the circuit following the diagram layout.png attached to the sketch
+User-friendly interface displaying air quality index, temperature, and humidity
 
-== Step 3: Load the code
+Historical data tracking for trend analysis
 
-Upload the code contained in this sketch on to your board
+== Components ==
+Hardware:
 
-=== Folder structure
+ESP8266 Microcontroller - for data processing and cloud communication
 
-....
- sketch123                => Arduino sketch folder
-  ├── sketch123.ino       => main Arduino file
-  ├── schematics.png      => (optional) an image of the required schematics
-  ├── layout.png          => (optional) an image of the layout
-  └── ReadMe.adoc         => this file
-....
+DHT11 Sensor - measures temperature and humidity
 
-=== License
-This project is released under a {License} License.
+MQ-135 Sensor - detects air pollutants like CO2 and VOCs
 
-=== Contributing
-To contribute to this project please contact: 
+WiFi Module - for cloud connectivity
 
-=== BOM
-Add the bill of the materials you need for this project.
+Software:
 
-|===
-| ID | Part name      | Part number | Quantity
-| R1 | 10k Resistor   | 1234-abcd   | 10       
-| L1 | Red LED        | 2345-asdf   | 5        
-| A1 | Arduino Zero   | ABX00066    | 1        
-|===
+Arduino Cloud - for data storage, retrieval, and visualization
+
+OpenWeatherMap API - for external weather data integration
+
+Flask Web Application - for additional analytics and visualization
+
+== System Architecture ==
+
+Sensors collect real-time air quality and weather data.
+
+ESP8266 processes and transmits data to Arduino Cloud.
+
+Arduino Cloud dashboard visualizes temperature, humidity, and air quality.
+
+External weather data is fetched via API for comparison.
+
+Data is displayed interactively for user insights.
+
+== Setup Instructions ==
+
+Hardware Setup:
+
+Connect DHT11 and MQ-135 sensors to ESP8266 as per circuit diagram.
+
+Ensure WiFi connectivity for ESP8266.
+
+Software Configuration:
+
+Install Arduino IDE and required libraries (DHT, MQTT, WiFiManager).
+
+Upload the provided Arduino sketch to ESP8266.
+
+Configure Arduino Cloud with required variables and devices.
+
+Deploy the Flask web application for additional analytics.
+
+== Challenges and Solutions ==
+1. Arduino Cloud Connectivity IssuesProblem: Difficulty in configuring ESP8266 with Arduino Cloud.Solution: Verified WiFi credentials, updated firmware, and ensured the correct board settings in Arduino IDE.
+
+2. API Data Integration ChallengesProblem: Issues retrieving and displaying external weather data.Solution: Implemented caching mechanisms and optimized API request handling.
+
+== Future Enhancements ==
+
+Addition of more advanced sensors for pollutants like PM2.5 and NO2.
+
+Integration with machine learning models for predictive analytics.
+
+Mobile app for remote monitoring and notifications.
+
+Public dashboard access for broader environmental insights.
+
+== Conclusion ==
+This IoT project demonstrates the effective combination of sensor networks, cloud computing, and data visualization for environmental monitoring. The system provides a real-time, user-friendly platform for individuals and researchers to assess and compare air quality with external weather conditions, contributing to informed decision-making and improved environmental awareness.
+
+== Authors ==
+
+Sai Krishna Manickyam - Kent State University
+
+Sonavi Makarand Dalvi - Kent State University
+
+Vishnu Priya Eluri - Kent State University
+
+For further details, refer to the project documentation.
+
 
 
 === Help
