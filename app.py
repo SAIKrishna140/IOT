@@ -55,7 +55,7 @@ def index():
 
 @app.route('/weather')
 def weather():
-    api_key = "a1e1eb9ec97cc537874c97f711d7c42c"
+    api_key = "paste your api key"
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     latitude = request.args.get('lat')
     longitude = request.args.get('lon')
